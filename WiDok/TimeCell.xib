@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="TimeCell" customModule="WiDok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="70.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoV-pI-T1a">
+                        <rect key="frame" x="16" y="8" width="137" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="35S-mz-Pe5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNw-9C-fI2">
+                        <rect key="frame" x="169" y="8" width="137" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="mmL-sK-hjz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1HC-cD-f4o">
+                        <rect key="frame" x="16" y="37" width="137" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="SDk-n3-0nC"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="4xV-AV-b70"/>
+                        </connections>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sJV-Pk-SVU">
+                        <rect key="frame" x="169" y="37" width="137" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="FIL-Y3-Ygu"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="Jgz-ia-Zmo"/>
+                        </connections>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83a-m5-ZME">
+                        <rect key="frame" x="16" y="70.5" width="290" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="yh4-9z-ZaR"/>
+                        </constraints>
+                    </view>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kAv-FF-0sr">
+                        <rect key="frame" x="16" y="37" width="137" height="30"/>
+                    </pickerView>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsV-yE-sEv">
+                        <rect key="frame" x="169" y="37" width="137" height="30"/>
+                    </pickerView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GNw-9C-fI2" firstAttribute="width" secondItem="PoV-pI-T1a" secondAttribute="width" id="0JN-vm-xwl"/>
+                    <constraint firstItem="kAv-FF-0sr" firstAttribute="bottom" secondItem="1HC-cD-f4o" secondAttribute="bottom" id="0wP-Fb-GZo"/>
+                    <constraint firstItem="sJV-Pk-SVU" firstAttribute="trailing" secondItem="LsV-yE-sEv" secondAttribute="trailing" id="5O9-MY-bm4"/>
+                    <constraint firstItem="1HC-cD-f4o" firstAttribute="top" secondItem="GNw-9C-fI2" secondAttribute="bottom" constant="8" id="7xK-fd-Wzh"/>
+                    <constraint firstItem="sJV-Pk-SVU" firstAttribute="top" secondItem="PoV-pI-T1a" secondAttribute="bottom" constant="8" id="8El-se-pIO"/>
+                    <constraint firstItem="GNw-9C-fI2" firstAttribute="leading" secondItem="PoV-pI-T1a" secondAttribute="trailing" constant="16" id="BDW-23-5z4"/>
+                    <constraint firstItem="PoV-pI-T1a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="CJv-aJ-5ef"/>
+                    <constraint firstItem="sJV-Pk-SVU" firstAttribute="top" secondItem="LsV-yE-sEv" secondAttribute="top" id="D9y-Xm-Y9k"/>
+                    <constraint firstAttribute="trailing" secondItem="GNw-9C-fI2" secondAttribute="trailing" constant="16" id="EKt-wz-awt"/>
+                    <constraint firstItem="PoV-pI-T1a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Et4-sH-mZo"/>
+                    <constraint firstItem="sJV-Pk-SVU" firstAttribute="width" secondItem="1HC-cD-f4o" secondAttribute="width" id="FyL-N3-myX"/>
+                    <constraint firstAttribute="bottom" secondItem="83a-m5-ZME" secondAttribute="bottom" id="Gbx-ce-GcA"/>
+                    <constraint firstItem="GNw-9C-fI2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="KQu-nK-wYQ"/>
+                    <constraint firstItem="1HC-cD-f4o" firstAttribute="top" secondItem="PoV-pI-T1a" secondAttribute="bottom" constant="8" id="NT0-bn-lXL"/>
+                    <constraint firstItem="sJV-Pk-SVU" firstAttribute="leading" secondItem="1HC-cD-f4o" secondAttribute="trailing" constant="16" id="Vg7-Qj-xL8"/>
+                    <constraint firstAttribute="trailing" secondItem="83a-m5-ZME" secondAttribute="trailing" constant="16" id="Xg2-Le-9Nv"/>
+                    <constraint firstItem="1HC-cD-f4o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="abX-Ck-QUN"/>
+                    <constraint firstItem="sJV-Pk-SVU" firstAttribute="leading" secondItem="LsV-yE-sEv" secondAttribute="leading" id="bL6-54-NLi"/>
+                    <constraint firstAttribute="trailing" secondItem="sJV-Pk-SVU" secondAttribute="trailing" constant="16" id="btR-Jw-Rfm"/>
+                    <constraint firstItem="kAv-FF-0sr" firstAttribute="leading" secondItem="1HC-cD-f4o" secondAttribute="leading" id="dRj-yv-eTT"/>
+                    <constraint firstItem="1HC-cD-f4o" firstAttribute="top" secondItem="PoV-pI-T1a" secondAttribute="bottom" constant="8" id="e3G-2K-RBs"/>
+                    <constraint firstItem="kAv-FF-0sr" firstAttribute="top" secondItem="1HC-cD-f4o" secondAttribute="top" id="fW4-io-RVd"/>
+                    <constraint firstItem="kAv-FF-0sr" firstAttribute="trailing" secondItem="1HC-cD-f4o" secondAttribute="trailing" id="iBr-Ml-dtn"/>
+                    <constraint firstItem="sJV-Pk-SVU" firstAttribute="bottom" secondItem="LsV-yE-sEv" secondAttribute="bottom" id="lug-BQ-Aab"/>
+                    <constraint firstItem="83a-m5-ZME" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vJK-C3-NdA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="endPicker" destination="LsV-yE-sEv" id="0Bg-fN-ZFv"/>
+                <outlet property="endTime" destination="sJV-Pk-SVU" id="bkn-l9-6Z3"/>
+                <outlet property="seprator" destination="83a-m5-ZME" id="N9z-Xg-ua0"/>
+                <outlet property="startPicker" destination="kAv-FF-0sr" id="I3f-a1-wOy"/>
+                <outlet property="startTime" destination="1HC-cD-f4o" id="htw-rh-B2g"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="64.5"/>
+        </tableViewCell>
+    </objects>
+</document>

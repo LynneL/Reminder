@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		308C7D3C6451147A639FBBB0 /* Pods_WiDok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FC8B415F852BB1C537F8EB /* Pods_WiDok.framework */; };
+		BA3B51431F3BDB430043AFBA /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B51421F3BDB430043AFBA /* Utility.swift */; };
+		BA3B51481F3BE0930043AFBA /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B51461F3BE0930043AFBA /* TimeCell.swift */; };
+		BA3B51491F3BE0930043AFBA /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3B51471F3BE0930043AFBA /* TimeCell.xib */; };
+		BA579FB11F3977E800CCDA46 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA579FB01F3977E800CCDA46 /* CalendarViewController.swift */; };
+		BA579FB31F39799400CCDA46 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA579FB21F39799400CCDA46 /* EventModel.swift */; };
+		BA579FB61F39846E00CCDA46 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA579FB51F39846E00CCDA46 /* UIHelper.swift */; };
+		BA579FBC1F3988CA00CCDA46 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA579FB91F3988CA00CCDA46 /* IGLDropDownItem.m */; };
+		BA579FBD1F3988CA00CCDA46 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BA579FBB1F3988CA00CCDA46 /* IGLDropDownMenu.m */; };
+		BA579FC01F39A3BE00CCDA46 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA579FBE1F39A3BE00CCDA46 /* CalendarTableViewCell.swift */; };
+		BA579FC11F39A3BE00CCDA46 /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA579FBF1F39A3BE00CCDA46 /* CalendarTableViewCell.xib */; };
+		BA579FC71F3AD4DB00CCDA46 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA579FC51F3AD4DB00CCDA46 /* OptionCell.swift */; };
+		BA579FC81F3AD4DB00CCDA46 /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA579FC61F3AD4DB00CCDA46 /* OptionCell.xib */; };
+		BA64E4BE1F390FC0006F24B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E4BD1F390FC0006F24B6 /* AppDelegate.swift */; };
+		BA64E4C31F390FC0006F24B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64E4C11F390FC0006F24B6 /* Main.storyboard */; };
+		BA64E4C51F390FC0006F24B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA64E4C41F390FC0006F24B6 /* Assets.xcassets */; };
+		BA64E4C81F390FC0006F24B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64E4C61F390FC0006F24B6 /* LaunchScreen.storyboard */; };
+		BA64E4D11F39109C006F24B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E4D01F39109C006F24B6 /* HomeViewController.swift */; };
+		BA64E4F91F3910DD006F24B6 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA64E4DA1F3910DD006F24B6 /* YALSpringAnimation.m */; };
+		BA64E4FA1F3910DD006F24B6 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = BA64E4DF1F3910DD006F24B6 /* CAAnimation+YALTabBarViewAnimations.m */; };
+		BA64E4FB1F3910DD006F24B6 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = BA64E4E31F3910DD006F24B6 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		BA64E4FC1F3910DD006F24B6 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BA64E4E61F3910DD006F24B6 /* YALAnimatingTabBarConstants.m */; };
+		BA64E4FD1F3910DD006F24B6 /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA64E4EA1F3910DD006F24B6 /* YALFoldingTabBarController.m */; };
+		BA64E4FE1F3910DD006F24B6 /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA64E4EE1F3910DD006F24B6 /* YALTabBarItem.m */; };
+		BA64E4FF1F3910DD006F24B6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA64E4F11F3910DD006F24B6 /* Info.plist */; };
+		BA64E5001F3910DD006F24B6 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BA64E4F51F3910DD006F24B6 /* YALCustomHeightTabBar.m */; };
+		BA64E5011F3910DD006F24B6 /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BA64E4F81F3910DD006F24B6 /* YALFoldingTabBar.m */; };
+		BA64E50C1F391116006F24B6 /* FontInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = BA64E5051F391116006F24B6 /* FontInspector.m */; };
+		BA64E50D1F391116006F24B6 /* IonIcons-iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = BA64E5081F391116006F24B6 /* IonIcons-iOS.m */; };
+		BA64E50E1F391116006F24B6 /* ionicons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA64E5091F391116006F24B6 /* ionicons.bundle */; };
+		BA64E50F1F391116006F24B6 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA64E50B1F391116006F24B6 /* ionicons.ttf */; };
+		BA64E54B1F39318B006F24B6 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E54A1F39318B006F24B6 /* NewViewController.swift */; };
+		BA64E5501F397196006F24B6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BA64E54F1F397196006F24B6 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		335EFA5E5CF7A647E77719B2 /* Pods-WiDok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiDok.release.xcconfig"; path = "Pods/Target Support Files/Pods-WiDok/Pods-WiDok.release.xcconfig"; sourceTree = "<group>"; };
+		37FC8B415F852BB1C537F8EB /* Pods_WiDok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiDok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450BE7ACBCD6D5C9E258BA53 /* Pods-WiDok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiDok.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WiDok/Pods-WiDok.debug.xcconfig"; sourceTree = "<group>"; };
+		BA3B51421F3BDB430043AFBA /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		BA3B51461F3BE0930043AFBA /* TimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		BA3B51471F3BE0930043AFBA /* TimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
+		BA579FB01F3977E800CCDA46 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		BA579FB21F39799400CCDA46 /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		BA579FB51F39846E00CCDA46 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		BA579FB81F3988CA00CCDA46 /* IGLDropDownItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownItem.h; sourceTree = "<group>"; };
+		BA579FB91F3988CA00CCDA46 /* IGLDropDownItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownItem.m; sourceTree = "<group>"; };
+		BA579FBA1F3988CA00CCDA46 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownMenu.h; sourceTree = "<group>"; };
+		BA579FBB1F3988CA00CCDA46 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownMenu.m; sourceTree = "<group>"; };
+		BA579FBE1F39A3BE00CCDA46 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		BA579FBF1F39A3BE00CCDA46 /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
+		BA579FC51F3AD4DB00CCDA46 /* OptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		BA579FC61F3AD4DB00CCDA46 /* OptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
+		BA64E4BA1F390FC0006F24B6 /* WiDok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiDok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA64E4BD1F390FC0006F24B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA64E4C21F390FC0006F24B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA64E4C41F390FC0006F24B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA64E4C71F390FC0006F24B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA64E4C91F390FC0006F24B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA64E4D01F39109C006F24B6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BA64E4D21F3910B9006F24B6 /* WiDok-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiDok-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA64E4D91F3910DD006F24B6 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
+		BA64E4DA1F3910DD006F24B6 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
+		BA64E4DE1F3910DD006F24B6 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		BA64E4DF1F3910DD006F24B6 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		BA64E4E21F3910DD006F24B6 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		BA64E4E31F3910DD006F24B6 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		BA64E4E51F3910DD006F24B6 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		BA64E4E61F3910DD006F24B6 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		BA64E4E91F3910DD006F24B6 /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
+		BA64E4EA1F3910DD006F24B6 /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
+		BA64E4ED1F3910DD006F24B6 /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
+		BA64E4EE1F3910DD006F24B6 /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
+		BA64E4F01F3910DD006F24B6 /* FoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingTabBar.h; sourceTree = "<group>"; };
+		BA64E4F11F3910DD006F24B6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA64E4F41F3910DD006F24B6 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
+		BA64E4F51F3910DD006F24B6 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
+		BA64E4F71F3910DD006F24B6 /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
+		BA64E4F81F3910DD006F24B6 /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
+		BA64E5041F391116006F24B6 /* FontInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontInspector.h; sourceTree = "<group>"; };
+		BA64E5051F391116006F24B6 /* FontInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontInspector.m; sourceTree = "<group>"; };
+		BA64E5061F391116006F24B6 /* ionicons-codes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ionicons-codes.h"; sourceTree = "<group>"; };
+		BA64E5071F391116006F24B6 /* IonIcons-iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IonIcons-iOS.h"; sourceTree = "<group>"; };
+		BA64E5081F391116006F24B6 /* IonIcons-iOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IonIcons-iOS.m"; sourceTree = "<group>"; };
+		BA64E5091F391116006F24B6 /* ionicons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ionicons.bundle; sourceTree = "<group>"; };
+		BA64E50A1F391116006F24B6 /* ionicons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ionicons.h; sourceTree = "<group>"; };
+		BA64E50B1F391116006F24B6 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		BA64E54A1F39318B006F24B6 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		BA64E54F1F397196006F24B6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA64E4B71F390FC0006F24B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308C7D3C6451147A639FBBB0 /* Pods_WiDok.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		019462E7DBD76C02029914F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37FC8B415F852BB1C537F8EB /* Pods_WiDok.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA579FB71F3988CA00CCDA46 /* IGLDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BA579FB81F3988CA00CCDA46 /* IGLDropDownItem.h */,
+				BA579FB91F3988CA00CCDA46 /* IGLDropDownItem.m */,
+				BA579FBA1F3988CA00CCDA46 /* IGLDropDownMenu.h */,
+				BA579FBB1F3988CA00CCDA46 /* IGLDropDownMenu.m */,
+			);
+			path = IGLDropDownMenu;
+			sourceTree = "<group>";
+		};
+		BA579FC21F3A5D2A00CCDA46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4C11F390FC0006F24B6 /* Main.storyboard */,
+				BA579FBE1F39A3BE00CCDA46 /* CalendarTableViewCell.swift */,
+				BA579FBF1F39A3BE00CCDA46 /* CalendarTableViewCell.xib */,
+				BA579FC51F3AD4DB00CCDA46 /* OptionCell.swift */,
+				BA579FC61F3AD4DB00CCDA46 /* OptionCell.xib */,
+				BA3B51461F3BE0930043AFBA /* TimeCell.swift */,
+				BA3B51471F3BE0930043AFBA /* TimeCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BA579FC31F3A5D4100CCDA46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4D01F39109C006F24B6 /* HomeViewController.swift */,
+				BA64E54A1F39318B006F24B6 /* NewViewController.swift */,
+				BA579FB01F3977E800CCDA46 /* CalendarViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BA579FC41F3A5D5C00CCDA46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA579FB21F39799400CCDA46 /* EventModel.swift */,
+				BA579FB51F39846E00CCDA46 /* UIHelper.swift */,
+				BA3B51421F3BDB430043AFBA /* Utility.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BA64E4B11F390FC0006F24B6 = {
+			isa = PBXGroup;
+			children = (
+				BA64E54F1F397196006F24B6 /* Podfile */,
+				BA64E4BC1F390FC0006F24B6 /* WiDok */,
+				BA64E4BB1F390FC0006F24B6 /* Products */,
+				E6BB446883A1AB29F7811184 /* Pods */,
+				019462E7DBD76C02029914F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA64E4BB1F390FC0006F24B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4BA1F390FC0006F24B6 /* WiDok.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA64E4BC1F390FC0006F24B6 /* WiDok */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4BD1F390FC0006F24B6 /* AppDelegate.swift */,
+				BA579FC41F3A5D5C00CCDA46 /* Model */,
+				BA579FC31F3A5D4100CCDA46 /* Controller */,
+				BA579FC21F3A5D2A00CCDA46 /* Views */,
+				BA64E4CF1F390FDA006F24B6 /* SupportingFiles */,
+			);
+			path = WiDok;
+			sourceTree = "<group>";
+		};
+		BA64E4CF1F390FDA006F24B6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BA579FB71F3988CA00CCDA46 /* IGLDropDownMenu */,
+				BA64E5031F391116006F24B6 /* ionicons */,
+				BA64E4D61F3910DD006F24B6 /* FoldingTabBar */,
+				BA64E4C41F390FC0006F24B6 /* Assets.xcassets */,
+				BA64E4C61F390FC0006F24B6 /* LaunchScreen.storyboard */,
+				BA64E4C91F390FC0006F24B6 /* Info.plist */,
+				BA64E4D21F3910B9006F24B6 /* WiDok-Bridging-Header.h */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		BA64E4D61F3910DD006F24B6 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4D71F3910DD006F24B6 /* Animation */,
+				BA64E4DB1F3910DD006F24B6 /* Category */,
+				BA64E4E41F3910DD006F24B6 /* Constants */,
+				BA64E4E71F3910DD006F24B6 /* Controller */,
+				BA64E4EB1F3910DD006F24B6 /* Model */,
+				BA64E4EF1F3910DD006F24B6 /* Resources */,
+				BA64E4F21F3910DD006F24B6 /* View */,
+			);
+			path = FoldingTabBar;
+			sourceTree = "<group>";
+		};
+		BA64E4D71F3910DD006F24B6 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4D81F3910DD006F24B6 /* YALSpringAnimation */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		BA64E4D81F3910DD006F24B6 /* YALSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4D91F3910DD006F24B6 /* YALSpringAnimation.h */,
+				BA64E4DA1F3910DD006F24B6 /* YALSpringAnimation.m */,
+			);
+			path = YALSpringAnimation;
+			sourceTree = "<group>";
+		};
+		BA64E4DB1F3910DD006F24B6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4DC1F3910DD006F24B6 /* CAAnimation */,
+				BA64E4E01F3910DD006F24B6 /* CATransaction */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BA64E4DC1F3910DD006F24B6 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4DD1F3910DD006F24B6 /* CAAnimation+YALTabBarViewAnimations */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		BA64E4DD1F3910DD006F24B6 /* CAAnimation+YALTabBarViewAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4DE1F3910DD006F24B6 /* CAAnimation+YALTabBarViewAnimations.h */,
+				BA64E4DF1F3910DD006F24B6 /* CAAnimation+YALTabBarViewAnimations.m */,
+			);
+			path = "CAAnimation+YALTabBarViewAnimations";
+			sourceTree = "<group>";
+		};
+		BA64E4E01F3910DD006F24B6 /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4E11F3910DD006F24B6 /* CATransaction+TransactionWithAnimationsAndCompletion */,
+			);
+			path = CATransaction;
+			sourceTree = "<group>";
+		};
+		BA64E4E11F3910DD006F24B6 /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4E21F3910DD006F24B6 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				BA64E4E31F3910DD006F24B6 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+			);
+			path = "CATransaction+TransactionWithAnimationsAndCompletion";
+			sourceTree = "<group>";
+		};
+		BA64E4E41F3910DD006F24B6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4E51F3910DD006F24B6 /* YALAnimatingTabBarConstants.h */,
+				BA64E4E61F3910DD006F24B6 /* YALAnimatingTabBarConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BA64E4E71F3910DD006F24B6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4E81F3910DD006F24B6 /* FoldingTabBarController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA64E4E81F3910DD006F24B6 /* FoldingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4E91F3910DD006F24B6 /* YALFoldingTabBarController.h */,
+				BA64E4EA1F3910DD006F24B6 /* YALFoldingTabBarController.m */,
+			);
+			path = FoldingTabBarController;
+			sourceTree = "<group>";
+		};
+		BA64E4EB1F3910DD006F24B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4EC1F3910DD006F24B6 /* TabBarItem */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA64E4EC1F3910DD006F24B6 /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4ED1F3910DD006F24B6 /* YALTabBarItem.h */,
+				BA64E4EE1F3910DD006F24B6 /* YALTabBarItem.m */,
+			);
+			path = TabBarItem;
+			sourceTree = "<group>";
+		};
+		BA64E4EF1F3910DD006F24B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4F01F3910DD006F24B6 /* FoldingTabBar.h */,
+				BA64E4F11F3910DD006F24B6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA64E4F21F3910DD006F24B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4F31F3910DD006F24B6 /* CustomHeightTabBar */,
+				BA64E4F61F3910DD006F24B6 /* FoldingTabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA64E4F31F3910DD006F24B6 /* CustomHeightTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4F41F3910DD006F24B6 /* YALCustomHeightTabBar.h */,
+				BA64E4F51F3910DD006F24B6 /* YALCustomHeightTabBar.m */,
+			);
+			path = CustomHeightTabBar;
+			sourceTree = "<group>";
+		};
+		BA64E4F61F3910DD006F24B6 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E4F71F3910DD006F24B6 /* YALFoldingTabBar.h */,
+				BA64E4F81F3910DD006F24B6 /* YALFoldingTabBar.m */,
+			);
+			path = FoldingTabBar;
+			sourceTree = "<group>";
+		};
+		BA64E5031F391116006F24B6 /* ionicons */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E5041F391116006F24B6 /* FontInspector.h */,
+				BA64E5051F391116006F24B6 /* FontInspector.m */,
+				BA64E5061F391116006F24B6 /* ionicons-codes.h */,
+				BA64E5071F391116006F24B6 /* IonIcons-iOS.h */,
+				BA64E5081F391116006F24B6 /* IonIcons-iOS.m */,
+				BA64E5091F391116006F24B6 /* ionicons.bundle */,
+				BA64E50A1F391116006F24B6 /* ionicons.h */,
+				BA64E50B1F391116006F24B6 /* ionicons.ttf */,
+			);
+			path = ionicons;
+			sourceTree = "<group>";
+		};
+		E6BB446883A1AB29F7811184 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				450BE7ACBCD6D5C9E258BA53 /* Pods-WiDok.debug.xcconfig */,
+				335EFA5E5CF7A647E77719B2 /* Pods-WiDok.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA64E4B91F390FC0006F24B6 /* WiDok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA64E4CC1F390FC0006F24B6 /* Build configuration list for PBXNativeTarget "WiDok" */;
+			buildPhases = (
+				16489EFF7FA631A924DD8EA4 /* [CP] Check Pods Manifest.lock */,
+				BA64E4B61F390FC0006F24B6 /* Sources */,
+				BA64E4B71F390FC0006F24B6 /* Frameworks */,
+				BA64E4B81F390FC0006F24B6 /* Resources */,
+				EBD54CE816CA1080D75C7435 /* [CP] Embed Pods Frameworks */,
+				D82D9A090E704FEE51852CAC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiDok;
+			productName = WiDok;
+			productReference = BA64E4BA1F390FC0006F24B6 /* WiDok.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA64E4B21F390FC0006F24B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Lynne;
+				TargetAttributes = {
+					BA64E4B91F390FC0006F24B6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EZ679F3LK2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BA64E4B51F390FC0006F24B6 /* Build configuration list for PBXProject "WiDok" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA64E4B11F390FC0006F24B6;
+			productRefGroup = BA64E4BB1F390FC0006F24B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA64E4B91F390FC0006F24B6 /* WiDok */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA64E4B81F390FC0006F24B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA64E50F1F391116006F24B6 /* ionicons.ttf in Resources */,
+				BA64E4FF1F3910DD006F24B6 /* Info.plist in Resources */,
+				BA64E50E1F391116006F24B6 /* ionicons.bundle in Resources */,
+				BA64E4C81F390FC0006F24B6 /* LaunchScreen.storyboard in Resources */,
+				BA3B51491F3BE0930043AFBA /* TimeCell.xib in Resources */,
+				BA64E4C51F390FC0006F24B6 /* Assets.xcassets in Resources */,
+				BA64E5501F397196006F24B6 /* Podfile in Resources */,
+				BA64E4C31F390FC0006F24B6 /* Main.storyboard in Resources */,
+				BA579FC11F39A3BE00CCDA46 /* CalendarTableViewCell.xib in Resources */,
+				BA579FC81F3AD4DB00CCDA46 /* OptionCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16489EFF7FA631A924DD8EA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiDok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D82D9A090E704FEE51852CAC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WiDok/Pods-WiDok-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD54CE816CA1080D75C7435 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WiDok/Pods-WiDok-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CalendarKit/CalendarKit.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Neon/Neon.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalendarKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Neon.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WiDok/Pods-WiDok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA64E4B61F390FC0006F24B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA579FC71F3AD4DB00CCDA46 /* OptionCell.swift in Sources */,
+				BA579FB11F3977E800CCDA46 /* CalendarViewController.swift in Sources */,
+				BA3B51481F3BE0930043AFBA /* TimeCell.swift in Sources */,
+				BA64E4BE1F390FC0006F24B6 /* AppDelegate.swift in Sources */,
+				BA64E4FD1F3910DD006F24B6 /* YALFoldingTabBarController.m in Sources */,
+				BA579FC01F39A3BE00CCDA46 /* CalendarTableViewCell.swift in Sources */,
+				BA64E5001F3910DD006F24B6 /* YALCustomHeightTabBar.m in Sources */,
+				BA64E4FC1F3910DD006F24B6 /* YALAnimatingTabBarConstants.m in Sources */,
+				BA64E4FE1F3910DD006F24B6 /* YALTabBarItem.m in Sources */,
+				BA64E4FB1F3910DD006F24B6 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				BA64E50C1F391116006F24B6 /* FontInspector.m in Sources */,
+				BA64E4F91F3910DD006F24B6 /* YALSpringAnimation.m in Sources */,
+				BA64E4D11F39109C006F24B6 /* HomeViewController.swift in Sources */,
+				BA64E54B1F39318B006F24B6 /* NewViewController.swift in Sources */,
+				BA579FBD1F3988CA00CCDA46 /* IGLDropDownMenu.m in Sources */,
+				BA3B51431F3BDB430043AFBA /* Utility.swift in Sources */,
+				BA64E5011F3910DD006F24B6 /* YALFoldingTabBar.m in Sources */,
+				BA579FBC1F3988CA00CCDA46 /* IGLDropDownItem.m in Sources */,
+				BA579FB61F39846E00CCDA46 /* UIHelper.swift in Sources */,
+				BA64E4FA1F3910DD006F24B6 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
+				BA64E50D1F391116006F24B6 /* IonIcons-iOS.m in Sources */,
+				BA579FB31F39799400CCDA46 /* EventModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA64E4C11F390FC0006F24B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA64E4C21F390FC0006F24B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA64E4C61F390FC0006F24B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA64E4C71F390FC0006F24B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA64E4CA1F390FC0006F24B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA64E4CB1F390FC0006F24B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA64E4CD1F390FC0006F24B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450BE7ACBCD6D5C9E258BA53 /* Pods-WiDok.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = EZ679F3LK2;
+				INFOPLIST_FILE = WiDok/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lynne.WiDok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WiDok/WiDok-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BA64E4CE1F390FC0006F24B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335EFA5E5CF7A647E77719B2 /* Pods-WiDok.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = EZ679F3LK2;
+				INFOPLIST_FILE = WiDok/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lynne.WiDok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WiDok/WiDok-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA64E4B51F390FC0006F24B6 /* Build configuration list for PBXProject "WiDok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA64E4CA1F390FC0006F24B6 /* Debug */,
+				BA64E4CB1F390FC0006F24B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA64E4CC1F390FC0006F24B6 /* Build configuration list for PBXNativeTarget "WiDok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA64E4CD1F390FC0006F24B6 /* Debug */,
+				BA64E4CE1F390FC0006F24B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA64E4B21F390FC0006F24B6 /* Project object */;
+}
